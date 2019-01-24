@@ -1,0 +1,49 @@
+{
+  "name": "monking-mongodb",
+  "version": "1.0.0",
+  "description": "provide model level for monking using mongodb",
+  "scripts": {
+    "prepare": "rm -rf lib && babel src --out-dir lib",
+    "dev": "nodemon --trace-deprecation examples/index.js"
+  },
+  "peerDependencies": {
+    "monking": "^1.1.0"
+  },
+  "dependencies": {
+    "extend2": "^1.0.0",
+    "mongoose": "^5.4.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-mpfe": "^1.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "monking": "^1.1.0",
+    "nodemon": "^1.17.3"
+  },
+  "author": "chenhebing <1025263994@qq.com>",
+  "license": "MIT",
+  "nodemonConfig": {
+    "verbose": false,
+    "restartable": "rs",
+    "ignore": [
+      ".git/",
+      "node_modules/"
+    ],
+    "execMap": {
+      "js": "node --harmony"
+    },
+    "watch": [
+      "src",
+      "examples/config/",
+      "examples/server/model/**/index.js"
+    ],
+    "legacyWatch": true,
+    "env": {
+      "NODE_ENV": "development"
+    },
+    "ext": "*"
+  }
+}

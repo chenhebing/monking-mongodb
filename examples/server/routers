@@ -1,0 +1,3 @@
+   get  ==>  /api/add/user                   controller: user           
+   get  ==>  /api/user                       controller: user           
+

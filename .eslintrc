@@ -1,0 +1,7 @@
+{
+    "extends": "mpfe",
+    "rules": {
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "no-return-await": "off"
+    }
+}
